@@ -1,3 +1,4 @@
+
 $(document).ready(function () { 
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on("click", function (event) {
@@ -69,15 +70,18 @@ $(document).ready(function () {
         $(this).addClass("pro3");
       }
     });
-//-----------for nav appearing and fading  --------------
-    $("").each(function () {
-      var pos = $(this).offset().top;
 
-      var winTop = $(window).scrollTop();
-      if (pos < winTop + 600) {
-        $(this).addClass("");
-      }
-    });
+    //----------nav scroll----------------//
+const nav = document.querySelector('.navbar');
+
+window.addEventListener('scroll', ()=>{
+  if(window.scrollY > 250){
+    nav.classList.add('navbar-scroll')
+  }else if (window.scrollY < 250){
+    nav.classList.remove('navbar-scroll')
+  }
+})
+
 
   });
 });
@@ -149,5 +153,3 @@ function Readmore(pac,four,btn4) {
     // document.getElementById(four).style.display="none";
   }
 }
-
-
