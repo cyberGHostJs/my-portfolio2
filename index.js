@@ -146,10 +146,28 @@ function Readmore(pac,four,btn4) {
   if (pac === true) {
     document.getElementById(four).style.visibility = "visible";
     document.getElementById(btn4).innerText = "Read less";
-    // document.getElementById(four).style.display="contents";
+    // document.getElementById(four).style.display="block";
+
+
   } else if (pac === false) {
     document.getElementById(four).style.visibility = "hidden";
     document.getElementById(btn4).innerText = "Read more";
     // document.getElementById(four).style.display="none";
   }
 }
+
+
+
+
+
+
+
+
+
+// const headerEl = document.querySelector('.navbar')
+
+// window.addEventListener('scroll', ()=>{
+//   if(window.scrollY > 50){
+//     headerEl.classList.add('navbar-scroll')
+//   }
+// })
