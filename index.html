@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./style.css">
   <script src="./index.js"></script>
 </head>
+
 <!-- Body -->
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
   <!-- navigations -->
@@ -329,22 +330,23 @@
       <p><span class="glyphicon glyphicon-phone"> </span> +234 08085176952</p>
       <p><span class="glyphicon glyphicon-envelope"> </span> davidsonigweokolo@gmail.com</p>
     </div>
-    <div class="col-sm-7 slideanim">
-      <div class="row" action="mailto:davidsonigweokolo@gmail.com" method="post" enctype="text/plain">
+
+    <form class="col-sm-7 slideanim" action="https://formsubmit.co/9b45df80351f923f01043423b945af4e" method="POST">
+      <div class="row">
         <div class="col-sm-6 form-group" >
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          <input class="form-control" id="name" type="text" name="name" placeholder="Name" required>
         </div>
         <div class="col-sm-6 form-group">
           <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <textarea class="form-control" id="comments" name="message" placeholder="Comment" rows="5"></textarea><br>
       <div class="row">
         <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit" name="submit" value="Submit">Send</button>
+          <button class="btn btn-default pull-right" type="submit">Send</button>
         </div>
       </div>
-    </div>
+    </form>
   </div>
   <!-------------------social-icons---------->
   <div class="row text-center slideanim social-icons">
