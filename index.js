@@ -1,5 +1,4 @@
-
-$(document).ready(function () { 
+$(document).ready(function () {
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on("click", function (event) {
     // Make sure this.hash has a value before overriding default behavior
@@ -24,7 +23,7 @@ $(document).ready(function () {
       );
     } // End if
   });
-
+//------this takes care of the slidein amination(adds and removes .slideanim as user scrolls)
   $(window).scroll(function () {
     $(".slideanim").each(function () {
       var pos = $(this).offset().top;
@@ -34,7 +33,7 @@ $(document).ready(function () {
         $(this).addClass("slide");
       }
     });
-
+//----from here, these takes care of the professional skills bars
     $(".mover5").each(function () {
       var pos = $(this).offset().top;
 
@@ -71,25 +70,26 @@ $(document).ready(function () {
       }
     });
 
-    //----------nav scroll----------------//
-const nav = document.querySelector('.navbar');
+    //----------nav scroll function----------------//
+    //this makes the nav bar solid once user scrolls more than 250px
+    const nav = document.querySelector(".navbar");
 
-window.addEventListener('scroll', ()=>{
-  if(window.scrollY > 250){
-    nav.classList.add('navbar-scroll')
-  }else if (window.scrollY < 250){
-    nav.classList.remove('navbar-scroll')
-  }
-})
-
-
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 250) {
+        nav.classList.add("navbar-scroll");
+      } else if (window.scrollY < 250) {
+        nav.classList.remove("navbar-scroll");
+      }
+    });
   });
 });
 
 //have to make this a reusable code
+//-------these are the functions that are accepted as params in the read more funct.
 let i = 0;
 
-function Offon() {//1
+function Offon() {
+  //1
   if (i == 0) {
     i++;
     return true;
@@ -98,11 +98,12 @@ function Offon() {//1
     return false;
   }
 }
-//------------------------------------//-----------------------------------//
+//-----------------------------------------------------------------------//
 
 let j = 0;
 
-function Offon2() {//2
+function Offon2() {
+  //2
   if (j == 0) {
     j++;
     return true;
@@ -111,11 +112,12 @@ function Offon2() {//2
     return false;
   }
 }
-//------------------------------------//-----------------------------------//
+//-----------------------------------------------------------------------//
 
 let l = 0;
 
-function Offon3() {//3
+function Offon3() {
+  //3
   if (l == 0) {
     l++;
     return true;
@@ -124,11 +126,12 @@ function Offon3() {//3
     return false;
   }
 }
-//------------------------------------//-----------------------------------//
+//-----------------------------------------------------------------------//
 
 let m = 0;
 
-function Offon4() {//4
+function Offon4() {
+  //4
   if (m == 0) {
     m++;
     return true;
@@ -137,37 +140,15 @@ function Offon4() {//4
     return false;
   }
 }
-//------------------------------------//-----------------------------------//
 
-//made this reusable
-// param "four", "btn4"
-function Readmore(pac,four,btn4) {
-  // console.log(pac)
-  if (pac === true) {
-    document.getElementById(four).style.visibility = "visible";
-    document.getElementById(btn4).innerText = "Read less";
-    // document.getElementById(four).style.display="block";
-
-
-  } else if (pac === false) {
-    document.getElementById(four).style.visibility = "hidden";
-    document.getElementById(btn4).innerText = "Read more";
-    // document.getElementById(four).style.display="none";
+//made this reusable function for the read more/ read less and it accepts 3 params.
+// "func", "para", "btn" which reps the function, paragraph id and the button id.
+function Readmore(func, para, btn) {
+  if (func === true) {
+    document.getElementById(para).style.visibility = "visible";
+    document.getElementById(btn).innerText = "Read less";
+  } else if (func === false) {
+    document.getElementById(para).style.visibility = "hidden";
+    document.getElementById(btn).innerText = "Read more";
   }
 }
-
-
-
-
-
-
-
-
-
-// const headerEl = document.querySelector('.navbar')
-
-// window.addEventListener('scroll', ()=>{
-//   if(window.scrollY > 50){
-//     headerEl.classList.add('navbar-scroll')
-//   }
-// })
