@@ -219,7 +219,7 @@ h4 {
   visibility: hidden;
 }
 .pro2 {
-  animation: progressAnimation1 5s;
+  animation: progressAnimation1 2s;
   visibility: visible;
 }
 .progress-moved1 .progress-bar1 {
@@ -230,7 +230,7 @@ h4 {
   visibility: hidden;
 }
 .pro1 {
-  animation: progressAnimation2 5s;
+  animation: progressAnimation2 2s;
   visibility: visible;
 }
 /* HTML 95% */
@@ -242,7 +242,7 @@ h4 {
   visibility: hidden;
 }
 .pro3 {
-  animation: progressAnimation3 5s;
+  animation: progressAnimation3 2s;
   visibility: visible;
 }
 /* CSS 90% */
@@ -254,7 +254,7 @@ h4 {
   visibility: hidden;
 }
 .pro5 {
-  animation: progressAnimation4 5s;
+  animation: progressAnimation4 2s;
   visibility: visible;
 }
 
